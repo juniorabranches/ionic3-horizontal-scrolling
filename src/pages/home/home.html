@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div padding class="selected-topics">
+
+  <ion-chip *ngFor="let cat of categorias" (click)="loadData(cat)" >
+    <ion-avatar>
+      <img [src]="cat.thumb">
+    </ion-avatar>
+    <ion-label color="dark">{{ cat.title }}</ion-label>
+  </ion-chip>
+
+  </div>
+</ion-content>

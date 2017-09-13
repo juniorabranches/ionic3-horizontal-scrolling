@@ -1,0 +1,16 @@
+page-home {
+  .selected-topics {
+    overflow: auto;
+    display: flex;
+    color: #000
+  }
+  ion-chip {
+      margin: 5px !important;
+      border: 1px solid rgba(56, 245, 239, 0.74);;
+      color: white !important;
+      font-weight: bold !important;
+      .button {
+          color: rgba(56, 245, 239, 0.74);
+      }
+  }  
+}
